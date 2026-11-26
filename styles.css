@@ -92,10 +92,10 @@ h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); letter-spacing: -0.02em; margin: 0 0
 .card-link { font-weight: 600; }
 
 /* Contact */
-.contact { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+.contact { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 20px; }
 .contact-item { border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; }
 .contact-item h3 { margin: 0 0 6px; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
-.contact-item p, .contact-item address { margin: 0; font-style: normal; font-size: 1.05rem; }
+.contact-item p { margin: 0; font-style: normal; font-size: 1.05rem; }
 
 /* Footer */
 .site-footer { border-top: 1px solid var(--border); padding: 28px 0; color: var(--muted); font-size: 0.9rem; }
