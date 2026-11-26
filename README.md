@@ -9,4 +9,4 @@ Static one-page site (HTML + CSS, no build step).
 
 Preview locally: open `index.html` in a browser, or run `python3 -m http.server` in this folder and visit http://localhost:8000.
 
-Placeholders still to fill are marked with `TODO` comments and `[brackets]`.
+Privacy and Terms still need a lawyer review (marked with `TODO` comments).
