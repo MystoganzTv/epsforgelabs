@@ -2,7 +2,8 @@
 
 Static one-page site (HTML + CSS, no build step).
 
-- `index.html`: home page (about, apps, contact)
+- `index.html`: home page (services, products, websites we have built, contact)
+- `images/`: screenshots for the "Websites we have built" section
 - `privacy.html`: Privacy Policy
 - `terms.html`: Terms of Service
 - `styles.css`: shared styles (light and dark mode)

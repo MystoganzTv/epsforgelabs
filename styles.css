@@ -57,8 +57,34 @@ section { padding: 72px 0; }
 h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); letter-spacing: -0.02em; margin: 0 0 12px; }
 .section-lead { color: var(--muted); margin: 0 0 40px; max-width: 620px; }
 
-/* App cards */
-.apps { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+/* Hero extras */
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.btn-secondary { background: transparent; color: var(--text); border: 1px solid var(--border); }
+.btn-secondary:hover { opacity: 1; border-color: var(--muted); }
+.stats { list-style: none; padding: 0; margin: 48px 0 0; display: flex; flex-wrap: wrap; gap: 16px 48px; }
+.stats li { display: flex; align-items: baseline; gap: 10px; color: var(--muted); }
+.stats strong { font-size: 1.9rem; letter-spacing: -0.02em; color: var(--text); }
+
+/* Grids and cards */
+.grid { display: grid; gap: 20px; }
+.apps { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+.services { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+.work { grid-template-columns: repeat(auto-fill, minmax(420px, 1fr)); }
+.subhead { font-size: 1.15rem; margin: 48px 0 18px; color: var(--muted); font-weight: 600; }
+.card-top { display: flex; align-items: flex-start; justify-content: space-between; }
+.badge { display: inline-block; font-size: 0.75rem; font-weight: 600; padding: 3px 10px; border-radius: 999px; border: 1px solid var(--border); color: var(--muted); background: var(--surface); white-space: nowrap; }
+.badge-live { color: #1f8a4c; border-color: rgba(31, 138, 76, 0.35); background: rgba(31, 138, 76, 0.08); }
+.platform { font-size: 0.85rem; font-weight: 600; color: var(--muted) !important; margin: -4px 0 10px !important; flex: 0 !important; }
+.card-muted { background: transparent; border-style: dashed; }
+.section-alt .card { background: var(--bg); }
+
+/* Work */
+.work-card { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; }
+.work-card img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; border-bottom: 1px solid var(--border); }
+.work-body { padding: 24px 26px 26px; display: flex; flex-direction: column; flex: 1; align-items: flex-start; }
+.work-body h3 { margin: 0 0 8px; font-size: 1.2rem; }
+.work-body p { color: var(--muted); margin: 0 0 12px; }
+.work-body .tech { font-size: 0.85rem; font-weight: 600; margin-bottom: 18px; flex: 1; }
 .card { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; display: flex; flex-direction: column; }
 .card-icon { width: 48px; height: 48px; border-radius: 12px; background: var(--surface); border: 1px solid var(--border); display: grid; place-items: center; font-weight: 800; color: var(--accent); margin-bottom: 18px; }
 .card h3 { margin: 0 0 8px; font-size: 1.2rem; }
@@ -87,8 +113,16 @@ h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); letter-spacing: -0.02em; margin: 0 0
 .legal ul { padding-left: 22px; }
 
 @media (max-width: 600px) {
-  .nav { gap: 14px; }
-  .nav a { font-size: 0.88rem; }
+  .site-header .container { flex-wrap: wrap; height: auto; padding-top: 14px; padding-bottom: 12px; row-gap: 8px; }
+  .brand { white-space: nowrap; }
+  .nav { gap: 18px; width: 100%; }
+  .nav a { font-size: 0.9rem; }
   .hero { padding: 64px 0 48px; }
   section { padding: 56px 0; }
+  .work { grid-template-columns: 1fr; }
+  .stats { gap: 12px 28px; }
+}
+
+@media (prefers-color-scheme: dark) {
+  .badge-live { color: #4fd18b; border-color: rgba(79, 209, 139, 0.35); background: rgba(79, 209, 139, 0.1); }
 }
