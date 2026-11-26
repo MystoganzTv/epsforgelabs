@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>EPS Forge Labs | Apps and websites, built end to end</title>
-  <meta name="description" content="EPS Forge Labs is a software studio based in Virginia. We design and build web apps, mobile and desktop apps, and business websites, and we run our own products.">
+  <meta name="description" content="EPS Forge Labs is a software studio based in Virginia. We build and run our own apps, and we design and build web apps, mobile and desktop apps and websites for other businesses.">
+  <meta name="theme-color" content="#0c0d11">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -15,10 +16,10 @@
     <div class="container">
       <a class="brand" href="index.html"><span class="brand-mark">EPS</span>EPS Forge Labs</a>
       <nav class="nav">
+        <a href="#apps">Apps</a>
         <a href="#services">Services</a>
-        <a href="#products">Products</a>
         <a href="#work">Work</a>
-        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="#contact">Work with us</a>
       </nav>
     </div>
   </header>
@@ -27,25 +28,96 @@
     <section class="hero" id="about">
       <div class="container">
         <p class="eyebrow">Software studio &middot; Virginia</p>
-        <h1>We design and build apps and websites, from the first idea to launch.</h1>
-        <p>EPS Forge Labs is an independent software studio. We run our own products in education, productivity and small-business finance, and we build web apps, mobile and desktop apps and websites for other businesses. Strategy, design, code and support, all in one place.</p>
+        <h1>Apps and websites, <span class="accent">built end to end.</span></h1>
+        <p>EPS Forge Labs designs, builds and runs its own apps for education, productivity and small-business finance, and builds web apps, mobile apps and websites for other businesses.</p>
         <div class="hero-actions">
-          <a class="btn" href="mailto:info@epsforgelabs.com?subject=New%20project">Work with us</a>
-          <a class="btn btn-secondary" href="#work">See our work</a>
+          <a class="btn" href="#contact">Work with us</a>
+          <a class="btn btn-secondary" href="#apps">See our apps</a>
         </div>
         <ul class="stats">
-          <li><strong>6</strong><span>products live</span></li>
+          <li><strong>6</strong><span>apps live</span></li>
           <li><strong>3</strong><span>in development</span></li>
           <li><strong>4</strong><span>platforms: web, iPhone, Mac, Windows</span></li>
         </ul>
       </div>
     </section>
 
-    <section class="section-alt" id="services">
+    <section id="apps">
       <div class="container">
-        <p class="eyebrow">What we do</p>
-        <h2>Services</h2>
-        <p class="section-lead">The same team that ships our own products can build yours. One point of contact, from planning to launch and beyond.</p>
+        <div class="section-head">
+          <h2>Our <span class="accent">apps</span></h2>
+          <p class="section-lead">Software we design, build and support ourselves, for the web, iPhone, Mac and Windows.</p>
+        </div>
+        <div class="filters" role="group" aria-label="Filter apps">
+          <button class="filter" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter" type="button" data-filter="live" aria-pressed="false">Live</button>
+          <button class="filter" type="button" data-filter="dev" aria-pressed="false">In development</button>
+        </div>
+        <div class="app-grid">
+          <a class="app-card" href="https://rbtgenius.com" target="_blank" rel="noopener" data-status="live">
+            <img src="images/apps/rbt-genius.jpg" alt="RBT Genius app icon" width="120" height="120">
+            <h3>RBT Genius</h3>
+            <p class="tagline">RBT exam prep with practice tests, mock exams and flashcards</p>
+            <div class="meta"><span class="chip">Web</span></div>
+          </a>
+          <a class="app-card" href="https://apps.apple.com/app/id6774150174" target="_blank" rel="noopener" data-status="live">
+            <img src="images/apps/bookliz.jpg" alt="Bookliz app icon" width="120" height="120">
+            <h3>Bookliz</h3>
+            <p class="tagline">Reading tracker and personal library for book lovers</p>
+            <div class="meta"><span class="chip">iPhone</span></div>
+          </a>
+          <a class="app-card" href="https://foldiq.app" target="_blank" rel="noopener" data-status="live">
+            <img src="images/apps/foldiq.jpg" alt="Foldiq app icon" width="120" height="120">
+            <h3>Foldiq</h3>
+            <p class="tagline">Turns messy photo and video folders into a clean, dated structure</p>
+            <div class="meta"><span class="chip">Mac &middot; Windows</span></div>
+          </a>
+          <a class="app-card" href="https://onroadbooks.com" target="_blank" rel="noopener" data-status="live">
+            <img src="images/apps/onroad-books.jpg" alt="OnRoad Books app icon" width="120" height="120">
+            <h3>OnRoad Books</h3>
+            <p class="tagline">Bookkeeping and profit tracking for owner-operator truckers</p>
+            <div class="meta"><span class="chip">Web</span></div>
+          </a>
+          <a class="app-card" href="https://gohostlyx.vercel.app" target="_blank" rel="noopener" data-status="live">
+            <img src="images/apps/gohostlyx.jpg" alt="GoHostlyx app icon" width="120" height="120">
+            <h3>GoHostlyx</h3>
+            <p class="tagline">Revenue, payouts and real profit for short-term rental hosts</p>
+            <div class="meta"><span class="chip">Web</span></div>
+          </a>
+          <a class="app-card" href="https://www.dentalbrainy.com" target="_blank" rel="noopener" data-status="live">
+            <img src="images/apps/dentalbrainy.jpg" alt="DentalBrainy app icon" width="120" height="120">
+            <h3>DentalBrainy</h3>
+            <p class="tagline">Dental board exam prep built on recalled exam questions</p>
+            <div class="meta"><span class="chip">Web</span></div>
+          </a>
+          <div class="app-card in-dev" data-status="dev">
+            <img src="images/apps/lotline.jpg" alt="Lotline app icon" width="120" height="120">
+            <h3>Lotline</h3>
+            <p class="tagline">All-in-one platform for real estate investors</p>
+            <div class="meta"><span class="chip">Web</span><span class="chip chip-dev">In development</span></div>
+          </div>
+          <div class="app-card in-dev" data-status="dev">
+            <img src="images/apps/giggrow.jpg" alt="GigGrow app icon" width="120" height="120">
+            <h3>GigGrow</h3>
+            <p class="tagline">Earnings, mileage and taxes for drivers on several gig apps</p>
+            <div class="meta"><span class="chip">iPhone</span><span class="chip chip-dev">In development</span></div>
+          </div>
+          <div class="app-card in-dev" data-status="dev">
+            <img src="images/apps/behavioros-notes.jpg" alt="BehaviorOS Notes app icon" width="120" height="120">
+            <h3>BehaviorOS Notes</h3>
+            <p class="tagline">AI-assisted session notes for ABA teams, always clinician-reviewed</p>
+            <div class="meta"><span class="chip">Web</span><span class="chip chip-dev">In development</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-head">
+          <h2>What we <span class="accent">build for you</span></h2>
+          <p class="section-lead">The same studio that ships our own apps can build yours. One point of contact, from the first plan to launch and beyond.</p>
+        </div>
         <div class="grid services">
           <article class="card">
             <div class="card-icon">W</div>
@@ -71,86 +143,12 @@
       </div>
     </section>
 
-    <section id="products">
+    <section id="work">
       <div class="container">
-        <p class="eyebrow">Our products</p>
-        <h2>Apps we build and run</h2>
-        <p class="section-lead">Products designed, built and supported by EPS Forge Labs.</p>
-
-        <div class="grid apps">
-          <article class="card">
-            <div class="card-top"><div class="card-icon">RG</div><span class="badge badge-live">Live</span></div>
-            <h3>RBT Genius</h3>
-            <p class="platform">Web</p>
-            <p>Exam prep for the Registered Behavior Technician (RBT) certification: practice questions, mock exams, flashcards and readiness analytics, in English and Spanish.</p>
-            <a class="card-link" href="https://rbtgenius.com" target="_blank" rel="noopener">Visit rbtgenius.com &rarr;</a>
-          </article>
-          <article class="card">
-            <div class="card-top"><div class="card-icon">Bk</div><span class="badge badge-live">Live</span></div>
-            <h3>Bookliz</h3>
-            <p class="platform">iPhone</p>
-            <p>Your personal reading tracker and library: scan a book's ISBN, log reading sessions, follow series, set goals and keep your reviews and favorite quotes.</p>
-            <a class="card-link" href="https://apps.apple.com/app/id6774150174" target="_blank" rel="noopener">Get it on the App Store &rarr;</a>
-          </article>
-          <article class="card">
-            <div class="card-top"><div class="card-icon">Fq</div><span class="badge badge-live">Live</span></div>
-            <h3>Foldiq</h3>
-            <p class="platform">Mac &middot; Windows</p>
-            <p>Turns messy photo and video folders into a clean, date-based structure. Flags duplicates and lets you review every change before anything moves.</p>
-            <a class="card-link" href="https://foldiq.app" target="_blank" rel="noopener">Visit foldiq.app &rarr;</a>
-          </article>
-          <article class="card">
-            <div class="card-top"><div class="card-icon">OR</div><span class="badge badge-live">Live</span></div>
-            <h3>OnRoad Books</h3>
-            <p class="platform">Web</p>
-            <p>Bookkeeping and profit tracking for owner-operators and small trucking fleets: cost per mile, load screening and broker and lane scores from your own records.</p>
-            <a class="card-link" href="https://onroadbooks.com" target="_blank" rel="noopener">Visit onroadbooks.com &rarr;</a>
-          </article>
-          <article class="card">
-            <div class="card-top"><div class="card-icon">GH</div><span class="badge badge-live">Live</span></div>
-            <h3>GoHostlyx</h3>
-            <p class="platform">Web</p>
-            <p>The financial command center for short-term rental hosts: import Airbnb and Booking.com exports and see revenue, payouts, expenses and real profit in one place.</p>
-            <a class="card-link" href="https://gohostlyx.vercel.app" target="_blank" rel="noopener">Visit GoHostlyx &rarr;</a>
-          </article>
-          <article class="card">
-            <div class="card-top"><div class="card-icon">DB</div><span class="badge badge-live">Live</span></div>
-            <h3>DentalBrainy</h3>
-            <p class="platform">Web</p>
-            <p>Dental board exam prep built around recalled exam questions, organized by specialty and topic and reviewed by the community.</p>
-            <a class="card-link" href="https://www.dentalbrainy.com" target="_blank" rel="noopener">Visit dentalbrainy.com &rarr;</a>
-          </article>
+        <div class="section-head">
+          <h2>Websites <span class="accent">we've built</span></h2>
+          <p class="section-lead">Designed, built and launched by EPS Forge Labs.</p>
         </div>
-
-        <h3 class="subhead">In development</h3>
-        <div class="grid apps">
-          <article class="card card-muted">
-            <div class="card-top"><div class="card-icon">Ll</div><span class="badge">In development</span></div>
-            <h3>Lotline</h3>
-            <p class="platform">Web</p>
-            <p>An all-in-one platform for real estate investors: leads and outreach, property data, deal analysis, buyers and a deal pipeline, one record per property.</p>
-          </article>
-          <article class="card card-muted">
-            <div class="card-top"><div class="card-icon">GG</div><span class="badge">In development</span></div>
-            <h3>GigGrow</h3>
-            <p class="platform">iPhone</p>
-            <p>Earnings, mileage and taxes for drivers who work more than one gig app. Reads your earnings from a screenshot, privately on your phone.</p>
-          </article>
-          <article class="card card-muted">
-            <div class="card-top"><div class="card-icon">BN</div><span class="badge">In development</span></div>
-            <h3>BehaviorOS Notes</h3>
-            <p class="platform">Web</p>
-            <p>An AI-assisted documentation workspace for ABA professionals. The AI helps draft session notes; the clinician reviews and signs every one.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-alt" id="work">
-      <div class="container">
-        <p class="eyebrow">Selected work</p>
-        <h2>Websites we've built</h2>
-        <p class="section-lead">Designed, built and launched by EPS Forge Labs.</p>
         <div class="grid work">
           <article class="work-card">
             <img src="images/rise-behavior-therapy.jpg" alt="Home page of the Rise Behavior Therapy website" loading="lazy" width="1200" height="750">
@@ -176,7 +174,7 @@
               <h3>Dental practice website</h3>
               <p>Multi-page site for a family dental practice in Northern Virginia: services, doctors, implants, sedation dentistry and online booking.</p>
               <p class="tech">React &middot; Vite</p>
-              <span class="badge">Client project</span>
+              <span class="chip">Client project</span>
             </div>
           </article>
           <article class="work-card">
@@ -185,7 +183,7 @@
               <h3>Medical transportation website</h3>
               <p>Site for a non-emergency medical transportation provider, with a ride request flow, English and Spanish content and an admin dashboard.</p>
               <p class="tech">React &middot; Vite &middot; Tailwind CSS</p>
-              <span class="badge">Client project</span>
+              <span class="chip">Client project</span>
             </div>
           </article>
         </div>
@@ -194,13 +192,11 @@
 
     <section id="contact">
       <div class="container">
-        <p class="eyebrow">Contact</p>
-        <h2>Have a project in mind?</h2>
-        <p class="section-lead">Tell us what you want to build and we'll get back to you. Questions about our apps and partnership inquiries are welcome too.</p>
-        <div class="contact">
-          <div class="contact-item">
-            <h3>Email</h3>
-            <p><a href="mailto:info@epsforgelabs.com">info@epsforgelabs.com</a></p>
+        <div class="cta-box">
+          <h2>Have a project <span class="accent">in mind?</span></h2>
+          <p>Tell us what you want to build and we'll get back to you. Questions about our apps and partnership inquiries are welcome too.</p>
+          <div class="hero-actions">
+            <a class="btn" href="mailto:info@epsforgelabs.com?subject=New%20project">Email info@epsforgelabs.com</a>
           </div>
         </div>
       </div>
@@ -209,13 +205,39 @@
 
   <footer class="site-footer">
     <div class="container">
-      <span>&copy; <span id="year">2026</span> EP Spaangberg Inc. EPS Forge Labs is a brand of EP Spaangberg Inc.</span>
-      <nav>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Service</a>
-      </nav>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html"><span class="brand-mark">EPS</span>EPS Forge Labs</a>
+          <p>Software studio based in Virginia, United States.</p>
+        </div>
+        <div>
+          <h4>Work with us</h4>
+          <p>Available for web apps, mobile and desktop apps, business websites and AI features.</p>
+          <a class="btn" href="mailto:info@epsforgelabs.com?subject=New%20project">info@epsforgelabs.com</a>
+        </div>
+        <div>
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="#apps">Apps</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; <span id="year">2026</span> EP Spaangberg Inc. EPS Forge Labs is a brand of EP Spaangberg Inc.</div>
     </div>
   </footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const filters = document.querySelectorAll('.filter');
+    const cards = document.querySelectorAll('.app-card');
+    filters.forEach((button) => button.addEventListener('click', () => {
+      const value = button.dataset.filter;
+      filters.forEach((b) => b.setAttribute('aria-pressed', String(b === button)));
+      cards.forEach((card) => { card.hidden = value !== 'all' && card.dataset.status !== value; });
+    }));
+  </script>
 </body>
 </html>

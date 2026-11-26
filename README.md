@@ -3,6 +3,7 @@
 Static one-page site (HTML + CSS, no build step).
 
 - `index.html`: home page (services, products, websites we have built, contact)
+- `images/apps/`: app icons for the "Our apps" grid
 - `images/`: screenshots for the "Websites we have built" section
 - `privacy.html`: Privacy Policy
 - `terms.html`: Terms of Service
